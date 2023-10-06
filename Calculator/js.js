@@ -12,21 +12,21 @@ function number(element) {
   }
 
   if(lognumber == 0){
-    document.getElementById("demo").innerHTML = oldNumber;
+    $("#demo").text(oldNumber);
   } else{
-    document.getElementById("demo").innerHTML = lognumber + " " + operation + " " + oldNumber;
+    $("#demo").text(lognumber + " " + operation + " " + oldNumber);
   }
 }
 function clean() {
   oldNumber = 0;
-  document.getElementById("demo").innerHTML = oldNumber;
+  $("#demo").text(oldNumber);
 }
 
 function count(element) {
   operation = element.innerHTML;
   lognumber = oldNumber;
   oldNumber = 0;
-  document.getElementById("demo").innerHTML = lognumber + " " + operation + " " + oldNumber;
+  $("#demo").text(lognumber + " " + operation + " " + oldNumber);
 
   //Add condition if want ex.: 2+2+2
 }
@@ -46,7 +46,7 @@ function equal() {
     result = num1 * num2;
   }
   // Update the calculator display with the result.
-  document.getElementById("demo").innerHTML = result;
+  $("#demo").text(result);
 
   // Reset the 'oldNumber' and 'lognumber' variables for the next calculation.
   oldNumber = result;
