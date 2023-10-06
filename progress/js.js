@@ -5,17 +5,16 @@ function augment(){
 
     if(parseInt(numeroAtual) < parseInt(numeroMaximo)){
     let somaresultado = parseInt(numeroAtual) + 1;
-    document.getElementById("valorAtual").innerHTML = somaresultado;
+    $("#valorAtual").text(somaresultado);
 
     let percentage = somaresultado * 100 / parseFloat(numeroMaximo);
 
-    document.getElementById("percentage").innerHTML = percentage+"%";
-    document.getElementById("percentage").style.width = percentage + "%";
+    $("#percentage").text(percentage + "%");
+    $("#percentage").width(percentage + "%");
     }
 }
 
 function reset(){
-    document.getElementById("valorAtual").innerHTML = 0;
-    document.getElementById("percentage").innerHTML = "0%";
-    document.getElementById("percentage").style.width = "0%";
+    $("#valorAtual").text(0);
+    $("#percentage").text("0%").width("0%");
 }
