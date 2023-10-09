@@ -32,13 +32,6 @@
         background-color: #f9f9f9;
         }
 
-        /* Add some styles to the '=' button */
-        button:last-child {
-        width: 110px;
-        background-color: #141516;
-        color: #fff;
-        }
-
         /* Add some styles to the 'C' button */
         button:last-child:nth-child(7) {
         background-color: #FF5722;
@@ -54,6 +47,33 @@
         background-color: #b3b3b3;
         }
 
+         /* Add some styles to the '=' button */
+        .a {
+        width: 110px;
+        background-color: #141516;
+        color: #fff;
+        }
+
+        .b {
+        width: 110px;
+        background-color: #f9f9f9;
+        }
+
+        /* Add some styles to the 'C' button */
+        .b:last-child:nth-child(7) {
+        background-color: #FF5722;
+        }
+
+        /* On hover, change the background color of the buttons */
+        .b:hover {
+        background-color: #ddd;
+        }
+
+        /* On active (when clicked), add a darker background color */
+        .b:active {
+        background-color: #b3b3b3;
+        }
+
         /* Style the paragraph */
         p {
         font-size: 24px;
@@ -63,7 +83,8 @@
         border: 1px solid #ccc;
         border-radius: 5px;
         background-color: #f0f0f0;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        
         }
 
     </style>
@@ -74,23 +95,24 @@
         <button onclick="number(this)">1</button>
         <button onclick="number(this)">2</button>
         <button onclick="number(this)">3</button>
-        <button onclick="equal()">=</button>
+        <button onclick="equal()"class="a">=</button>
+        <button onclick="count(this)"class="a">+</button>
     </div>
     <div>
         <button onclick="number(this)">4</button>
         <button onclick="number(this)">5</button>
         <button onclick="number(this)">6</button>
-        <button onclick="count(this)">+</button>
-        <button onclick="count(this)">-</button>
-        <button onclick="count(this)">x</button>
+        <button onclick="count(this)"class="a">-</button>
+        <button onclick="count(this)" class="a">x</button>
     </div>
     <div>
         <button onclick="number(this)">7</button>
         <button onclick="number(this)">8</button>
         <button onclick="number(this)">9</button>
-        <button onclick="number(this)">0</button>
-        <button onclick="clean()">c</button>
+        <button onclick="number(this)"class="b">0</button>
+        <button onclick="clean()"class="a">c</button>
     </div>
+    
    
 <script src = "js.js" ></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
