@@ -23,10 +23,14 @@ function clean() {
 }
 
 function count(element) {
+  if(operation != null){
+    equal();
+  }
   operation = element.innerHTML;
   lognumber = oldNumber;
   oldNumber = 0;
   $("#demo").text(lognumber + " " + operation + " " + oldNumber);
+
 
   //Add condition if want ex.: 2+2+2
 }
