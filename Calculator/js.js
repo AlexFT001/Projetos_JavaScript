@@ -19,6 +19,8 @@ function number(element) {
 }
 function clean() {
   oldNumber = 0;
+  operation = null;
+  lognumber = 0;
   $("#demo").text(oldNumber);
 }
 
@@ -52,7 +54,7 @@ function equal() {
   // Update the calculator display with the result.
   $("#demo").text(result);
 
-  // Reset the 'oldNumber' and 'lognumber' variables for the next calculation.
+  // Reset the 'oldNumber' and 'operation' variables for the next calculation.
   oldNumber = result;
-  lognumber = 0;
+  operation = null;
 }
