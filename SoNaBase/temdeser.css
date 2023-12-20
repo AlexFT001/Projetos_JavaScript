@@ -1,0 +1,9 @@
+.barra { 
+    height: 18px; 
+    width: 100px; 
+    position: absolute; 
+    bottom: 20px;
+    left: 0px;
+    background-color: black;
+} 
+  
